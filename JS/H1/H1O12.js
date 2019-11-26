@@ -6,6 +6,7 @@ function setup() {
   canvas.parent('processing');
   textFont("Verdana");
   textSize(14);
+  frameRate(60);
 }
 
 function draw() {
@@ -13,7 +14,10 @@ function draw() {
   fill('black');
   text("mouseX:" + round(mouseX) + " mouseY:" + round(mouseY),10,20);
   text("xJOS:" + xJOS + " yJOS:" + yJOS,300,20);
-  translate(xJOS,yJOS);
+  translate(mouseX,mouseY);
+
+  mouseX = constrain(mouseX,75,375);
+
   
   // in de volgende regels wordt JOS getekend
 
