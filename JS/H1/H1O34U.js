@@ -6,7 +6,7 @@ var diameter;
 function setup() {
   canvas = createCanvas(451,451);
   canvas.parent('processing');
-  frameRate(5);
+  frameRate(60);
   // noLoop();
   strokeWeight(4);
   stroke('steelblue');

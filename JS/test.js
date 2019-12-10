@@ -3,21 +3,17 @@ function setup() {
   background('silver');
   canvas.parent('processing');
   //noLoop();
-  frameRate(60
-    
-    
-    
-    
-    
-    );
+  frameRate(60);
 }
 
+
+
 function draw() {
-  noStroke();
-  fill('deepskyblue');
-  ellipse(450,450,200);
-  fill('gray');
-  ellipse(mouseX,mouseY,200);
-  fill('black');
-  ellipse(100,100,100);
+    noStroke();
+    fill ('green');
+    rect(175,0,100,100);
+}
+
+if (keyIsPressed(DOWN_ARROW)){
+    translate (0,5);
 }
