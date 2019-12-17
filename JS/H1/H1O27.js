@@ -20,7 +20,7 @@ function draw() {
   translate(0.5*breedte,150);
 
   for (var n = 0; n < aantal;n++) {
-    tekenJos(n+1);
+    tekenJos(2 + n/2);
     translate(breedte,0);
   }
   

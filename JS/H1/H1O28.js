@@ -17,11 +17,11 @@ function draw() {
   translate(225,225);
   
   // tekenen rode bladeren
-  
-  fill(178, 34, 34,.7);
-  ellipse(0,0,400,50);
-  rotate(360 / aantal);
-
+  for (var n = 1;n <= aantal;n++){
+     fill(178, 34, 34,.7);
+     ellipse(0,0,400,50);
+     rotate(360 / aantal);
+  }
   
   // gele vulkleur
 
