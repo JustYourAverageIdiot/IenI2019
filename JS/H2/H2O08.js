@@ -1,6 +1,6 @@
 var huisNummers = new Array(23,25,27,29,31,33);
 var huisEigenaren = new Array("Smiers","Dekker","Den Hartog","Tolboom","Kremer","Velthuizen");
-var kleur = 'lightgray';
+var kleur = 'darkgray';
 
 function setup() {
   canvas = createCanvas(1000,300);
@@ -15,14 +15,15 @@ function draw() {
   tekenAchtergrond();
 
   for (var h = 0;h < huisNummers.length;h++) {
-     tekenHuis(kleur,huisNummers[h],huisEigenaren[h]);
-     translate(150,0);
-     if (h == 1 ||h == 3||h == 5) {
-         fill ("darkgray")
-     }
-     else {
-         fill (kleur);
-     }
+        if (kleur == "darkgray") {
+         kleur = "lightgray";
+        }
+      else {
+         kleur = "darkgray";
+     } 
+        tekenHuis(kleur,huisNummers[h],huisEigenaren[h]);
+        translate(150,0);
+     
     }
 }
 
