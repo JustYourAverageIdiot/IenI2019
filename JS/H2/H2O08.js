@@ -17,11 +17,11 @@ function draw() {
   for (var h = 0;h < huisNummers.length;h++) {
      tekenHuis(kleur,huisNummers[h],huisEigenaren[h]);
      translate(150,0);
-     if (h = 1 || 3 || 5){
+     if (h == 1 ||h == 3||h == 5) {
          fill ("darkgray")
      }
      else {
-         fill (kleur)
+         fill (kleur);
      }
     }
 }
